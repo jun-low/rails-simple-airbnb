@@ -1,0 +1,15 @@
+<div class="card-container">
+  <div class="card" style="width: 100%;">
+    <img src="https://source.unsplash.com/1600x900/?flat,house" class="card-img-top" alt="...">
+    <div class="card-body">
+    <h3 class="card-title"><%= @flat.name %></h3>
+    <h4 class="card-subtitle mb-2 text-muted"><small><%= @flat.description %></small></h4>
+    <p class="card-text"><%= @flat.address %></p>
+
+        <hr>
+
+        <%= link_to 'Edit your flat', edit_flat_path, class: "card-link" %>
+        <%= link_to "Back to the list", flats_path, class: "card-link"%>
+    </div>
+  </div>
+</div>
